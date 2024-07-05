@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Check } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -40,6 +40,61 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <CardDescription>Your data is safe with our top-notch security measures</CardDescription>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20">
+        <h2 className="text-3xl font-bold text-center mb-12">Pricing</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Card>
+            <CardHeader>
+              <CardTitle>Basic</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <ul className="space-y-2">
+                  <li><Check className="inline-block mr-2" />Feature 1</li>
+                  <li><Check className="inline-block mr-2" />Feature 2</li>
+                  <li><Check className="inline-block mr-2" />Feature 3</li>
+                </ul>
+              </CardDescription>
+              <Button variant="secondary" size="lg" className="mt-4">Choose Plan</Button>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Pro</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <ul className="space-y-2">
+                  <li><Check className="inline-block mr-2" />Feature 1</li>
+                  <li><Check className="inline-block mr-2" />Feature 2</li>
+                  <li><Check className="inline-block mr-2" />Feature 3</li>
+                  <li><Check className="inline-block mr-2" />Feature 4</li>
+                </ul>
+              </CardDescription>
+              <Button variant="secondary" size="lg" className="mt-4">Choose Plan</Button>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle>Enterprise</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                <ul className="space-y-2">
+                  <li><Check className="inline-block mr-2" />Feature 1</li>
+                  <li><Check className="inline-block mr-2" />Feature 2</li>
+                  <li><Check className="inline-block mr-2" />Feature 3</li>
+                  <li><Check className="inline-block mr-2" />Feature 4</li>
+                  <li><Check className="inline-block mr-2" />Feature 5</li>
+                </ul>
+              </CardDescription>
+              <Button variant="secondary" size="lg" className="mt-4">Choose Plan</Button>
             </CardContent>
           </Card>
         </div>
