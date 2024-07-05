@@ -1,12 +1,12 @@
-import { Header, Paragraph } from '@/components/ui';
+import React from 'react';
 
 const Index = () => {
   return (
-    <div className="text-center p-6">
-      <Header className="text-4xl font-bold mb-4">Welcome to Your New App</Header>
-      <Paragraph className="text-lg text-gray-700">
-        This is a simple home page created using components from "@/components/ui" and styled with Tailwind CSS.
-      </Paragraph>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-4xl font-bold mb-4 text-center">Welcome to Your New App</h1>
+      <p className="text-xl text-gray-600 text-center">
+        This is a bare-bones application. Start building your features here.
+      </p>
     </div>
   );
 };
