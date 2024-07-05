@@ -1,10 +1,12 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Header, Paragraph } from 'shadcn/ui';
 
 const Index = () => {
   return (
-    <div className="text-center">
-      <h1 className="text-3xl">Your Blank Canvas</h1>
-      <p>Chat with the agent to start making edits.</p>
+    <div className="text-center p-6">
+      <Header className="text-4xl font-bold mb-4">Welcome to Your New App</Header>
+      <Paragraph className="text-lg text-gray-700">
+        This is a simple home page created using shadcn components and Tailwind CSS.
+      </Paragraph>
     </div>
   );
 };
