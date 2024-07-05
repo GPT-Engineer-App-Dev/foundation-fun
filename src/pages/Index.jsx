@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -49,6 +51,43 @@ const Index = () => {
         <p className="text-xl mb-8">Join thousands of satisfied users and transform your workflow today</p>
         <Button variant="secondary" size="lg">Sign Up Now</Button>
       </section>
+
+      {/* Footer Section */}
+      <footer className="mt-20 pb-8">
+        <Separator className="mb-8" />
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="col-span-1 md:col-span-2">
+            <h3 className="text-lg font-semibold mb-2">About Our App</h3>
+            <p className="text-muted-foreground">Empowering users with innovative solutions for enhanced productivity and seamless workflow management.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-muted-foreground hover:text-primary">About Us</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary">Contact</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary">Privacy Policy</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-2">Connect With Us</h3>
+            <div className="flex space-x-4">
+              <a href="#" className="text-muted-foreground hover:text-primary">
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-primary">
+                <Twitter className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-primary">
+                <Linkedin className="h-6 w-6" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 text-center text-muted-foreground">
+          <p>&copy; 2024 Our Amazing App. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 };
